@@ -1,9 +1,11 @@
 <script setup>
 import Header from './components/Header.vue';
+import Cakes from './components/Cakes.vue';
 import Footer from './components/Footer.vue';
-import GateauxGroupes from './components/GateauxGroupes.vue';
-import GateauxIndividuels from './components/GateauxIndividuels.vue';
-import GateauxVoyages from './components/GateauxVoyages.vue';
+import Tartes from './components/Tartes.vue';
+import Entremets from './components/Entremets.vue';
+import Macarons from './components/Macarons.vue';
+import Chouquettes from './components/Chouquettes.vue';
 import Contacts from './components/Contacts.vue';
 import Histoire from './components/Histoire.vue';
 </script>
@@ -14,14 +16,20 @@ import Histoire from './components/Histoire.vue';
     <section id="histoire">
       <Histoire />
     </section>
-    <section id="groupes">
-      <GateauxGroupes />
+    <section id="cakes">
+      <Cakes />
     </section>
-    <section id="individuels">
-      <GateauxIndividuels />
+    <section id="tartes">
+      <Tartes />
     </section>
-    <section id="voyages">
-      <GateauxVoyages />
+    <section id="entremets">
+      <Entremets />
+    </section>
+    <section id="macarons">
+      <Macarons />
+    </section>
+    <section id="chouquettes">
+      <Chouquettes />
     </section>
     <section id="contacts">
       <Contacts />

@@ -4,12 +4,14 @@ body {
 
 header { 
   #logo{
-    width: 200px;
+    width: 180px;
     display: flex;
+    flex-direction: column;
     margin: auto;
     background-color: #78174a;
     color: #cbc1c2;
     text-align: center;
+    padding: 17.25px 0px;
   }
 
   #upLineLogo{
