@@ -1,47 +1,34 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+import GateauxGroupes from './components/GateauxGroupes.vue';
+import GateauxIndividuels from './components/GateauxIndividuels.vue';
+import GateauxVoyages from './components/GateauxVoyages.vue';
+import Contacts from './components/Contacts.vue';
+import Histoire from './components/Histoire.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
+  <Header></Header>
   <main>
-    <TheWelcome />
+    <section id="histoire">
+      <Histoire />
+    </section>
+    <section id="groupes">
+      <GateauxGroupes />
+    </section>
+    <section id="individuels">
+      <GateauxIndividuels />
+    </section>
+    <section id="voyages">
+      <GateauxVoyages />
+    </section>
+    <section id="contacts">
+      <Contacts />
+    </section>
   </main>
+  <Footer></Footer>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
