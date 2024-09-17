@@ -1,7 +1,7 @@
 <template>
 	<div class="gateau-fiche">
 		<img
-			:src="`../src/assets/images/${image}`"
+			:src="`/assets/images/${image}`"
 			:alt="nomGateau"
 			class="gateau-image" />
 		<h3 class="gateau-nom">{{ nomGateau }}</h3>
