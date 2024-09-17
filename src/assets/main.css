@@ -1,26 +1,74 @@
 body {
-  margin: 0%;
+	margin: 0%;
+	background-color: #f4f0f1;
+	color: #2f2e2e;
+	text-align: center;
 }
 
-header { 
-  #logo{
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    background-color: #78174a;
-    color: #cbc1c2;
-    text-align: center;
-    padding: 17.25px 0px;
-  }
+header {
+	#logo {
+		width: 180px;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		background-color: #78174a;
+		color: #cbc1c2;
+		text-align: center;
+		padding: 17.25px 0px;
+	}
 
-  #upLineLogo{
-    font-size: 32px;
-    font-weight: 200;
-  }
-  
-  #underLineLogo{
-    font-size: 16px;
-  }
+	#upLineLogo {
+		font-size: 32px;
+		font-weight: 200;
+	}
+
+	#underLineLogo {
+		font-size: 16px;
+	}
 }
 
+#macarons,
+#chouquettes {
+	display: flex;
+	flex-direction: row;
+
+	div {
+		width: 50%;
+	}
+
+	img {
+		object-fit: cover;
+		max-width: 100%;
+	}
+}
+
+.gateau-fiche {
+	width: 20%;
+	border-radius: 5%;
+	padding: 16px;
+	text-align: center;
+}
+
+.gateau-image {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 8px;
+}
+
+.gateau-nom {
+	color: #78174a;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+section {
+	margin: 20px auto;
+}
