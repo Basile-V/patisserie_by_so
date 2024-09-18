@@ -5,6 +5,17 @@
 		components: {
 			GateauFiche,
 		},
+		data() {
+			return {
+				entremetList: [
+					{
+						image: "macarons.png",
+						nomGateau: "Le Paris-Brest by So",
+						description: "Un classique gourmand à base de p",
+					},
+				],
+			};
+		},
 	};
 </script>
 
@@ -13,9 +24,10 @@
 		<h2>Entremets</h2>
 		<div class="entremets list">
 			<GateauFiche
-				image="macarons.png"
-				nomGateau="Le Paris-Brest by So"
-				description="Un classique gourmand à base de p" />
+				v-for="entremet in entremetList"
+				:image="entremet.image"
+				:nomGateau="entremet.nomGateau"
+				:description="entremet.description" />
 		</div>
 	</div>
 </template>
