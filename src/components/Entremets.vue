@@ -25,6 +25,7 @@
 		<div class="entremets list">
 			<GateauFiche
 				v-for="entremet in entremetList"
+				:key="entremet.nomGateau"
 				:image="entremet.image"
 				:nomGateau="entremet.nomGateau"
 				:description="entremet.description" />

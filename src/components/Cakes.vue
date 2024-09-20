@@ -44,6 +44,7 @@
 	<div class="cakes list">
 		<GateauFiche
 			v-for="cake in cakeList"
+			:key="cake.nomGateau"
 			:image="cake.image"
 			:nomGateau="cake.nomGateau"
 			:description="cake.description" />

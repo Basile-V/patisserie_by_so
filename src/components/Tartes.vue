@@ -25,6 +25,7 @@
 		<div class="tartes list">
 			<GateauFiche
 				v-for="tarte in tarteList"
+				:key="tarte.nomGateau"
 				:image="tarte.image"
 				:nomGateau="tarte.nomGateau"
 				:description="tarte.description" />
