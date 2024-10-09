@@ -1,6 +1,6 @@
 # patisserie_by_so
 
-This template should help get you started developing with Vue 3 in Vite.
+[Link](https://patisseriebyso.netlify.app/) to web page
 
 ## Recommended IDE Setup
 

@@ -25,6 +25,32 @@ header {
 	#underLineLogo {
 		font-size: 16px;
 	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+
+		li {
+			display: inline;
+			padding: 0 15px;
+			border-left: solid black;
+		}
+
+		li:first-child {
+			border: none;
+		}
+	}
+
+	a {
+		color: #2f2e2e;
+		text-decoration: none;
+		transition: color 0.3s ease, text-decoration 0.3s ease;
+	}
+
+	a:hover {
+		color: #78174a;
+		text-decoration: underline;
+	}
 }
 
 #macarons,
