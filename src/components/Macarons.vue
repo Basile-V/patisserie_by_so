@@ -9,5 +9,7 @@
 			tarte citron meringuée, au caramel
 		</p>
 	</div>
-	<div><img src="../assets/images/macarons.png" alt="macarons" /></div>
+	<div class="illustrate">
+		<img src="../assets/images/macarons.png" alt="macarons" />
+	</div>
 </template>

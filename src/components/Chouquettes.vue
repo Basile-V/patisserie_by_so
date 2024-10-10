@@ -1,5 +1,7 @@
 <template>
-	<div><img src="../assets/images/chouquettes.png" alt="chouquettes" /></div>
+	<div class="illustrate">
+		<img src="../assets/images/chouquettes.png" alt="chouquettes" />
+	</div>
 	<div>
 		<h2>Chouquettes</h2>
 		<p>

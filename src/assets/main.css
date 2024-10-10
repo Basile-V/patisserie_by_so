@@ -1,3 +1,4 @@
+/* Styles globaux */
 body {
 	margin: 0%;
 	background-color: #f4f0f1;
@@ -5,9 +6,10 @@ body {
 	text-align: center;
 }
 
+/* Header */
 header {
 	#logo {
-		width: 180px;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		margin: auto;
@@ -71,7 +73,7 @@ header {
 .gateau-fiche {
 	width: 20%;
 	border-radius: 5%;
-	padding: 16px;
+	margin: 15px;
 	text-align: center;
 }
 
@@ -97,4 +99,90 @@ header {
 
 section {
 	margin: 20px auto;
+}
+
+/* Styles responsives pour mobile */
+@media (max-width: 768px) {
+	header {
+		#logo {
+			width: 100%;
+		}
+
+		#upLineLogo {
+			font-size: 28px;
+		}
+
+		#underLineLogo {
+			font-size: 14px;
+		}
+
+		nav ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		nav ul li {
+			display: block;
+			padding: 10px 0;
+			border: none;
+		}
+	}
+
+	.list {
+		flex-direction: column;
+	}
+
+	.gateau-fiche {
+		width: auto;
+		margin-bottom: 20px;
+	}
+
+	.gateau-image {
+		max-width: 100%;
+	}
+
+	section {
+		padding: 3em 0em;
+	}
+
+	#macarons,
+	#chouquettes {
+		flex-direction: column;
+		div {
+			width: 100%;
+		}
+
+		.illustrate {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	header {
+		#upLineLogo {
+			font-size: 24px;
+		}
+
+		#underLineLogo {
+			font-size: 12px;
+		}
+
+		nav ul li {
+			padding: 8px 0;
+		}
+	}
+
+	section {
+		padding: unset;
+	}
+
+	.gateau-fiche {
+		width: auto;
+	}
+
+	.gateau-image {
+		max-width: 90%;
+	}
 }
