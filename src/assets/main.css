@@ -97,8 +97,27 @@ header {
 	flex-direction: row;
 }
 
-section {
-	margin: 20px auto;
+/* General styles for the top button */
+#topButton {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 99;
+	background-color: #78174a; /* Button color */
+	color: white;
+	border: none;
+	outline: none;
+	padding: 15px;
+	border-radius: 50%;
+	font-size: 18px;
+	cursor: pointer;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease;
+}
+
+#topButton:hover {
+	background-color: #9e2c6f; /* Darker color on hover */
 }
 
 /* Styles responsives pour mobile */
@@ -157,6 +176,13 @@ section {
 			display: none;
 		}
 	}
+
+	#topButton {
+		bottom: 20px;
+		right: 20px;
+		padding: 12px;
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -184,5 +210,12 @@ section {
 
 	.gateau-image {
 		max-width: 90%;
+	}
+
+	#topButton {
+		bottom: 15px;
+		right: 15px;
+		padding: 10px;
+		font-size: 14px;
 	}
 }

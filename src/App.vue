@@ -8,6 +8,19 @@
 	import Chouquettes from "./components/Chouquettes.vue";
 	import Contacts from "./components/Contacts.vue";
 	import Histoire from "./components/Histoire.vue";
+
+	function scrollToTop() {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}
+
+	window.onscroll = function () {
+		const topButton = document.getElementById("topButton");
+		if (window.innerWidth <= 768 && document.documentElement.scrollTop > 100) {
+			topButton.style.display = "block";
+		} else {
+			topButton.style.display = "none";
+		}
+	};
 </script>
 
 <template>
@@ -34,6 +47,7 @@
 		<section id="contacts">
 			<Contacts />
 		</section>
+		<button id="topButton" @click="scrollToTop()">Top</button>
 	</main>
 	<Footer></Footer>
 </template>
